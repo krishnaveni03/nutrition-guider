@@ -1,56 +1,30 @@
 # Indian Food Classification
-Demo Video :point_down:
 
-https://user-images.githubusercontent.com/72247049/121991922-3913a080-cdbe-11eb-9234-a6498050ead0.mp4
+## Introduction
 
-Demo Image :point_down:
+The **Indian Food Classification** project is an exciting machine learning endeavor that seeks to classify a diverse array of traditional Indian dishes based on their nutritional attributes, particularly focusing on the fat content of these delectable foods.
 
-![Screenshot from 2021-06-14 22-38-30](https://user-images.githubusercontent.com/72247049/121991992-5ba5b980-cdbe-11eb-971c-182bb1a0913b.png)
+## Project Goals
 
-![Screenshot from 2021-06-14 22-38-01](https://user-images.githubusercontent.com/72247049/121992054-7aa44b80-cdbe-11eb-8975-f82da1c28f16.png)
+### Promoting Awareness
 
- - This Repo Represents **"Indian Food Classification"**
- - with the help of this project we can easily identity Indian Foods
- 
-# Description :clipboard:
+One of the primary goals of this project is to promote awareness about the nutritional aspects of Indian cuisine. Indian food is renowned for its rich flavors and regional diversity. However, understanding the nutritional content of these dishes is crucial for making informed dietary choices.
 
- - I use Transfer learning (InceptionV3 Model) to create this model and got a 92% accuracy and I Perfrom some EDA 
-   to check each classes and Check number of training examples of each food.
+### Classification and Prediction
 
- - This project will help people from other countries to classify Indian food easily.
- - I also Perform Data Augmentation for increasing the number of training examples , Data Augmentation can also reduce Overfitting.
- - I use callbacks can helps you prevent overfitting, visualize training progress, debug your code, save checkpoints, generate logs etc.
- - I use InceptionV3 Pre-Trained and got Training Accuracy 93% , you can also use other Pre-Trained Model like ResNet50 , Vgg19 etc
- - I use Flask to create a Web app and make an easy or Simple UI
- 
-# Dataset :bulb:
- - Download the Dataset here :point_down:
- - https://www.kaggle.com/theeyeschico/indian-food-classification
- 
-# Installation :desktop_computer:
-  - scikit-learn==0.24.1
-  - pandas==1.1.3
-  - numpy==1.18.5
-  - seaborn==0.11.1
-  - missingno==0.4.2
-  - imblearn==0.8.0
-  - tensorflow==2.5.0
-  - matlotlib==3.4.2
-   etc
-  
- To install the required packages and libraries, run this command in the project directory after cloning the repository:
- 
- ```
- pip install -r requirements.txt
-```
-# Motivation 💪 
- What to do when you are at home due to this pandemic situation? I started to learn Machine Learning and Deep learning 
- in last 8 months . I came to know mathematics behind all supervised models. Finally it is important to 
- work on application (real world application) to actually make a difference.
- 
-# Bug / Features
- If you find any bug or other problem regarding this project so just contact me on handles given below or also create an issue in issue section
- - **Linkdin** - https://www.linkedin.com/in/sarthak-sharma-5472aa1a0/
- - **Gmail** - sarthakparashar1408@gmail.com
- 
+The heart of the project lies in the development of a robust machine learning model that can classify various Indian dishes based on their ingredients and, most importantly, predict their fat content. By doing so, we aim to empower individuals to make healthier food choices while savoring the flavors of India.
 
+## Key Features
+
+- **Classification:** Our model classifies Indian dishes into different categories, helping users understand the variety within Indian cuisine.
+
+- **Nutritional Information:** We provide detailed nutritional information for each dish, with a special focus on the fat content measured in grams per serving.
+
+- **Accuracy:** Our classification model achieves impressive accuracy, making it a reliable tool for food categorization and nutritional estimation.
+
+## Getting Started
+
+To get started with the Indian Food Classification project, please follow the instructions in the [Installation](#installation) and [Usage](#usage) sections below.
+
+
+**Disclaimer:** The nutritional information provided by this project is for informational purposes only. It is not a substitute for professional dietary advice. Always consult with a healthcare professional or a registered dietitian for personalized dietary recommendations.
