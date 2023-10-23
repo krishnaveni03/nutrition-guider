@@ -1,0 +1,55 @@
+{% extends "base.html" %} {% block content %}
+
+<h2>Nutritional guider for Indian food</h2>
+
+<div>
+    <form id="upload-file" method="post" enctype="multipart/form-data">
+        <label for="imageUpload" class="upload-label">
+            Choose...
+        </label>
+        <input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg">
+    </form>
+
+    <div class="image-section" style="display:none;">
+        <div class="img-preview">
+            <div id="imagePreview">
+            </div>
+        </div>
+        <div>
+            <button type="button" class="btn btn-primary btn-lg " id="btn-predict">Predict!</button>
+        </div>
+    </div>
+
+    <div class="loader" style="display:none;"></div>
+
+    <h3 id="result">
+        <span> </span>
+    </h3>
+
+</div>
+<script>
+    document.getElementById("btn-predict").addEventListener("click", function() {
+        // Perform prediction and display the result in the "result" element
+        // Example:
+        const description = "This item is Jalebi. Description: Jalebi is a sweet Indian dessert made by deep-frying batter and soaking it in sugar syrup. It is high in fat and sugar, with minimal protein content. Fat Content: High fat content<br>Nutritional Info: High sugar content, low protein";
+        document.getElementById("result").innerHTML = description;
+        // Show the "Speak Description" button
+        document.getElementById("speak-description").style.display = "block";
+    });
+
+    document.getElementById("speak-description").addEventListener("click", function() {
+        // Extract the description text from the result and convert it to speech
+        const description = document.getElementById("result").textContent;
+        // Use text-to-speech synthesis library (e.g., gTTS) to generate the speech from the description
+        // Example:
+        // const tts = new gTTS(description, 'en');
+        // tts.save('description.mp3');
+        // You can provide the generated audio for download or play it in an audio element
+        // Example:
+        // const audioElement = new Audio('description.mp3');
+        // audioElement.play();
+    });
+</script>
+
+
+{% endblock %}
